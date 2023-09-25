@@ -264,8 +264,6 @@ h3 {
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
@@ -281,8 +279,11 @@ h3 {
 
 .list-portfolio {
     display: flex;
+    padding-bottom: 0px;
     flex-wrap: wrap;
-    column-gap: 24px;
+    align-content: flex-start;
+    gap: 24px;
+    padding: 120px 0;
     row-gap: 48px;
 }
 
@@ -298,6 +299,20 @@ h3 {
 }
 
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    clip-path: inset(100%)
+    ;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
 }
